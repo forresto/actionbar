@@ -340,6 +340,7 @@
       this.$el.html(this.template);
       var $btn = Backbone.$('a', this.$el);
       $btn.append(Backbone.$('<i class="icon-' + this.model.get('icon') + '"></i>'));
+      $btn.append( this.model.get('label') );
 
       if (this.model.get('disabled')) {
         this.$el.addClass('disabled');
